@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
@@ -32,6 +32,35 @@
 		</div>
 		<div class="foot1">
 			<a class="report" href="#" id="rep">Тех.поддержка</a>
+		</div>
+	</body>
+</html>
+<script src="/scripts/save_data.js"></script>-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ElsHelp</title>
+		<link rel="stylesheet" type="text/css" href="popup.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<div>
+			<img src='images/person.png' class="person"/>
+		</div>
+		<div style="float: right; margin-top: 34px; margin-right: 20px;">
+			<input type="text" placeholder="Логин" value="" name="login" id="login" required/><br>
+			<input type="password" placeholder="Пароль" value="" name="pass" id="pass" required/><br>
+			<button id="gobtn">Изменить</button>
+		</div>
+		<div style='display: block;'>
+			<h2>История оценок</h2>
+			<table class='tab'>
+				<thead>
+					<td class="th">Оценка</td><td class="th">Предмет</td><td class="th">Дата получения</td>
+				</thead>
+				<tbody class="tb" id="tb">
+				</tbody>
+			</table>
 		</div>
 	</body>
 </html>

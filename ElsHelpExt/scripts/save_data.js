@@ -1,5 +1,5 @@
 document.getElementById("gobtn").addEventListener("click", ClickedGo);
-document.getElementById("rep").addEventListener("click", ClickedRep);
+//document.getElementById("rep").addEventListener("click", ClickedRep);
 
 function ClickedRep() {
   window.open("https://t.me/slbear");
@@ -8,7 +8,17 @@ function ClickedRep() {
 function ClickedGo() {
 	var log = document.getElementById("login").value;
   var pass = document.getElementById("pass").value;
-	get_info(log, pass);
+  chrome.storage.local.get(['login', 'password'], function(data) {
+		var login = data.login;
+		var password = data.password;
+		if(login == log && password == pass){
+			alert('Логин и пароль совпадают с текущими');
+		}
+		else{
+			console.log(login, log, password, pass);
+			get_info(log, pass);
+		}
+	});
 }
 
 function get_info(login, pass){
@@ -99,7 +109,7 @@ try{
 				chrome.storage.local.set({'marks': spg});
 				chrome.storage.local.set({'login': login});
 				chrome.storage.local.set({'password': password});
-				alert('Success');
+				alert('Готово!');
 				chrome.alarms.clearAll();
 				chrome.alarms.create("5min", {
 				  periodInMinutes: 1
@@ -114,3 +124,39 @@ try{
 	alert('Произошла ошибка. Проверьте правильность логина и пароля.Если ошибка сохраняется, обратитесь в тех.поддержку');
 }
 }
+
+window.onload = function(){
+	chrome.storage.local.get(['login', 'password'], function(data) {
+		if(typeof data.login != undefined && typeof data.password != undefined){
+			document.querySelector('#login').value = data.login;
+			document.querySelector('#pass').value = data.password;
+		}
+	});
+
+	var tb = document.querySelector('#tb');
+	var history = [];
+	chrome.storage.local.get(['history'], function(data) {
+		if (typeof data.history !== 'undefined'){
+			history = data.history;
+		}
+
+		for(const mark of history){
+			if(mark['Оценка'] < 0){
+				var color = '';
+			}
+			else if(mark['Оценка'] == "5"){
+				var color = '#58f758';
+			}
+			else if(mark['Оценка'] == "4"){
+				var color = '#84dbff';
+			}
+			else if(mark['Оценка'] == "3"){
+				var color = '#f2d77a';
+			} else{
+				var color = '#ff6372';
+			}
+
+			tb.insertAdjacentHTML('afterbegin', `<tr><td><img src="images/mark${mark['Оценка']}.png" class="historymark" style="background-color: ${color}"/></td><td>${mark['Предмет']}</td><td>${mark['Дата']}</td></tr>`);
+		}
+	})
+};

@@ -1,6 +1,7 @@
 html {
   height: 100%;
 }
+/*
 body {
   margin:0;
   padding:0;
@@ -11,12 +12,10 @@ body {
 }
 
 .login-box {
-  /*position: absolute;*/
   top: 50%;
   left: 50%;
   width: 300px;
   padding: 30px;
-  /*transform: translate(-2%, -2%);*/
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -46,7 +45,6 @@ body {
   background: transparent;
 }
 .login-box .user-box label {
-  /*position: absolute;*/
   top:0;
   left: 0;
   padding: 10px 0;
@@ -56,7 +54,6 @@ body {
   transition: .5s;
 }
 .login-box .add-box label {
-  /*position: absolute;*/
   top:0;
   left: 0;
   padding: 10px 0;
@@ -74,7 +71,6 @@ body {
 }
 
 .login-box form a {
-  /*position: relative;*/
   display: inline-block;
   padding: 10px 20px;
   color: #03e9f4;
@@ -216,7 +212,7 @@ margin-top: 18px;
 }
 
 a.report:hover{
-  color: #03e9f4; /* Меняем цвет текста */
+  color: #03e9f4;
 }
 
 a.about {
@@ -232,8 +228,104 @@ margin-top: 18px;
 }
 
 a.about:hover{
-  color: #03e9f4; /* Меняем цвет текста */
+  color: #03e9f4;
 }
 
 div.foot1{
+}
+*/
+
+body {
+  background-color: #fafafa;
+  width: 450px;
+}
+
+.person {
+  border-radius: 50%;
+  width: 180px;
+  margin-left: 20px;
+}
+
+div{
+  text-align: center;
+  display: inline;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#login{
+  border: 1px solid #e3e4e4;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 200px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+#pass{
+  border: 1px solid #e3e4e4;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 200px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+#gobtn{
+  color: #fff;
+  background-color: #055D7D;
+  border-color: #055D7D;
+  cursor: pointer;
+  width: 221px;
+  border: 1px solid #e3e4e4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#gobtn:hover {
+      background-color:#0b86b2;
+      transition: 0.3s;
+  }
+
+.tab {
+  border-collapse: collapse;
+  overflow-y: scroll;
+  height: 280px;
+  display: block;
+  border-spacing: 2px;
+}
+
+#tb{
+  text-align: center;
+  vertical-align: middle;
+  display: ruby-text;
+}
+
+thead {
+  text-align: center;
+  vertical-align: middle;
+  display: ruby-text;
+}
+
+.historymark {
+  width: 50px;
+  float: left;
+  margin-left: 33px;
+  border-radius: 10px;
+}
+
+td {
+  background-color: white;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  border-bottom: 2px solid black;
+  width: 115px;
+  font-size: 16px;
+}
+
+.th {
+  font-weight: bold;
 }
