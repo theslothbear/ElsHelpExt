@@ -1,8 +1,57 @@
 document.getElementById("gobtn").addEventListener("click", ClickedGo);
-//document.getElementById("rep").addEventListener("click", ClickedRep);
 
-function ClickedRep() {
-  window.open("https://t.me/slbear");
+document.getElementById("tg").addEventListener("click", open_tg);
+document.getElementById("github").addEventListener("click", open_github);
+document.getElementById("bot").addEventListener("click", open_bot);
+
+document.getElementById("lines").addEventListener("click", menu);
+document.getElementById("stat").addEventListener("click", stat);
+document.getElementById("settings").addEventListener("click", settings);
+document.getElementById("vozm").addEventListener("click", vozm);
+
+document.getElementById("clear").addEventListener("click", clear);
+
+function clear(){
+	var result = confirm('Хотите продолжить?\nВся история оценок будет удалена');
+	if(result){
+		chrome.storage.local.set({'history': []});
+		document.location.reload();
+	}
+}
+
+function open_tg(){
+  window.open("https://t.me/slbden");
+}
+
+function open_github(){
+  window.open("https://github.com/theslothbear/ElsHelpExt");
+}
+
+function open_bot(){
+  window.open("https://t.me/elschool_help_bot");
+}
+
+function menu(){
+	if (document.querySelector('#is_menu_closed').checked){
+		document.querySelector('#menu').style.display = 'inline';
+		document.querySelector('#is_menu_closed').checked = false;
+	} else{
+		document.querySelector('#menu').style.display = 'none';
+		document.querySelector('#is_menu_closed').checked = true;
+	}
+}
+
+function stat(){
+	alert('Скоро');
+}
+
+function settings(){
+	//alert('Скоро');
+	chrome.tabs.create({url : "settings.html"});
+}
+
+function vozm(){
+	window.open("https://github.com/theslothbear/ElsHelpExt");
 }
 
 function ClickedGo() {
@@ -112,7 +161,7 @@ try{
 				alert('Готово!');
 				chrome.alarms.clearAll();
 				chrome.alarms.create("5min", {
-				  periodInMinutes: 1
+				  periodInMinutes: 5
 				});
 			}
 			this.send( null );
@@ -158,5 +207,10 @@ window.onload = function(){
 
 			tb.insertAdjacentHTML('afterbegin', `<tr><td><img src="images/mark${mark['Оценка']}.png" class="historymark" style="background-color: ${color}"/></td><td>${mark['Предмет']}</td><td>${mark['Дата']}</td></tr>`);
 		}
-	})
+	});
+
+	var manifest = chrome.runtime.getManifest();
+	//console.log(manifest);
+	document.querySelector("#v").textContent = `v. ${manifest['version']} Beta`;
+
 };
