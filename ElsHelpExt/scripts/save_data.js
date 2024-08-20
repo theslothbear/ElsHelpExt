@@ -42,7 +42,7 @@ function menu(){
 }
 
 function stat(){
-	alert('Скоро');
+	chrome.tabs.create({url : "stats.html"});
 }
 
 function settings(){
@@ -176,7 +176,7 @@ try{
 
 window.onload = function(){
 	chrome.storage.local.get(['login', 'password'], function(data) {
-		if(typeof data.login != undefined && typeof data.password != undefined){
+		if(typeof data.login != 'undefined' && typeof data.password != 'undefined'){
 			document.querySelector('#login').value = data.login;
 			document.querySelector('#pass').value = data.password;
 		}
