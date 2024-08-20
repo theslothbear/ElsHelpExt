@@ -1,2 +1,64 @@
-# ElsHelpExt v1.2
-Chrome extension for Elschool diary
+# ElsHelpExt v1.3 Beta
+#### Получайте уведомления об оценках без задержек с помощью ElsHelp! Расширение доступно для скачивания на ПК и мобильные телефоны
+## Оглавление
+#### 1.) [Установка на ПК: Chrome, Edge, Yandex и другие Chromium-браузеры](#пункт1)
+#### 2.) [Установка на ПК: Firefox](#пункт2)
+#### 3.) [Установка на мобильный телефон: Yandex и другие мобильные браузеры, поддерживающие расширения](#пункт3)
+
+
+<a name="пункт1"></a> 
+# 1.) Установка на ПК: Chrome, Edge, Yandex и другие Chromium-браузеры
+
+Переходим [по ссылке](https://chromewebstore.google.com/detail/elshelp/bmdnfegelmgebfegdomphfckbplkgneg) в официальный магазин расширений Chrome и нажимаем кнопку "Получить":
+
+![image](https://github.com/user-attachments/assets/a552ceeb-31e0-4084-b4ff-a52f09fd0bfa)
+
+Далее подтверждаем добавление:
+
+![image](https://github.com/user-attachments/assets/d60faca1-a10a-4245-99b7-52861d716e1d)
+
+Затем в меню расширений включаем его отображение:
+
+![image](https://github.com/user-attachments/assets/b6f6b745-64cb-44fb-8581-a3bb7f4d5964)
+
+**Готово! Теперь вы можете нажать на его иконку в верхней панели и начать пользоваться расширением**
+
+<a name="пункт2"></a>
+# 2.) Установка на ПК: Firefox
+
+Переходим [по ссылке](https://addons.mozilla.org/ru/firefox/addon/elshelp) в официальный магазин расширений Mozilla и нажимаем кнопку "Добавить в Firefox":
+
+![image](https://github.com/user-attachments/assets/183bfd83-6058-4132-accc-4207bd631a9b)
+
+Далее подтверждаем добавление:
+
+![image](https://github.com/user-attachments/assets/cc5b25cb-d1aa-484e-90e7-83ae4d4ecb17)
+
+**Готово! Теперь вы можете управлять расширением в меню расширений**
+
+![image](https://github.com/user-attachments/assets/9a33c173-41f9-4500-a6c1-9f838ba193a4)
+
+<a name="пункт3"></a>
+# 3.) Установка на мобильный телефон: Yandex и другие мобильные браузеры, поддерживающие расширения
+
+Переходим [по ссылке](https://chromewebstore.google.com/detail/elshelp/bmdnfegelmgebfegdomphfckbplkgneg) в официальный магазин расширений Chrome и нажимаем кнопку "Add to Chrome":
+
+![image](https://github.com/user-attachments/assets/01510c71-ec6c-437c-b570-eaf14a8675f8)
+
+Далее подтверждаем установку расширения: 
+
+![image](https://github.com/user-attachments/assets/7940a302-5d47-47fc-bd99-3b3bd26b408f)
+
+Затем нажимаем три точки в правом нижнем углу экрана:
+
+![image](https://github.com/user-attachments/assets/13f201ba-bd3c-4459-a1a4-d26dc93fff35)
+
+И находим пункт "Расширения" внизу списка:
+
+![image](https://github.com/user-attachments/assets/2ece6895-f0a0-45e9-8ae9-5def135fc7f1)
+
+**Готово! Теперь вы можете начать пользоваться расширением**
+
+
+
+
