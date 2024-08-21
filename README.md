@@ -28,9 +28,7 @@
 <a name="пункт2"></a>
 # 2.) Установка на ПК: Firefox
 
-Переходим [по ссылке](https://addons.mozilla.org/ru/firefox/addon/elshelp) в *официальный* магазин расширений Mozilla и нажимаем кнопку **"Добавить в Firefox"**:
-
-![image](https://github.com/user-attachments/assets/183bfd83-6058-4132-accc-4207bd631a9b)
+Переходим по [ссылке](https://addons.mozilla.org/firefox/downloads/file/4338999/elshelp-1.2.xpi) - это версия, подписанная FireFox, однако Mozilla отказывается публиковать ее в магазине, т.к. расширение предназначено для ограниченной группы лиц
 
 Далее **подтверждаем** добавление:
 
