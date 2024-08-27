@@ -1,5 +1,5 @@
 chrome.notifications.onClicked.addListener(function(notifId){
-	chrome.tabs.create({url : "popup.html"});
+	chrome.windows.create({url : "popup.html", width: 475, height: 580, type: "popup"});
 });
 
 
@@ -145,7 +145,7 @@ try{
 									message: 'Не удалось войти в аккаунт Elschool',
 									priority: 2
 								});
-								console.log(login, password);
+								//console.log(login, password);
 							});
 						});
 						return;
@@ -156,7 +156,7 @@ try{
 	        await chrome.storage.local.get(['marks'], async function(data) {
 	        	var sp = data.marks;
 	        	if (typeof sp !== 'undefined'){ 	
-	        		console.log(JSON.stringify(sp));
+	        		//console.log(JSON.stringify(sp));
 	        		if(sp.length == spg.length){
 	        			for(let i=0; i<sp.length; i++){
 	        				if(sp[i]['str'] != spg[i]['str']){

@@ -12,6 +12,7 @@ body {
   text-align: center;
   border-left: 2px solid #055D7D;
   border-right: 2px solid #055D7D;
+  user-select: none;
 }
 
 div {
@@ -58,4 +59,33 @@ select {
 #link:hover {
   text-decoration:underline;
   transform: scale(1.1);
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #055D7D;
+  border-radius: 6px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+#lyear {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input[type=radio]:checked + label {
+  background: #0687b1ad;
+}
+
+.divperiod {
+  margin-top: 10px;
+  padding: 5px;
 }

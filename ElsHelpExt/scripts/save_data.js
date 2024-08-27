@@ -42,12 +42,12 @@ function menu(){
 }
 
 function stat(){
-	chrome.tabs.create({url : "stats.html"});
+	chrome.windows.create({url : "stats.html", width: 500, height: 700, type: "popup"});
 }
 
 function settings(){
 	//alert('Скоро');
-	chrome.tabs.create({url : "settings.html"});
+	chrome.windows.create({url : "settings.html", width: 500, height: 700, type: "popup"});
 }
 
 function vozm(){

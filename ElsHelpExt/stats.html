@@ -17,9 +17,22 @@
       </select>
     </div>
 
-    <div>
-    </div>
+    <div class="divperiod">
+        <input type="radio" id="year" name="period" value="year" checked/>
+        <label for="year" id="lyear">Год</label>
 
+        <input type="radio" id="p1" name="period" value="1" />
+        <label for="p1" id="l1">1 чет.</label>
+
+        <input type="radio" id="p2" name="period" value="2" />
+        <label for="p2" id="l2">2 чет.</label>
+
+        <input type="radio" id="p3" name="period" value="3" />
+        <label for="p3" id="l3">3 чет.</label>
+
+        <input type="radio" id="p4" name="period" value="4" />
+        <label for="p4" id="l4">4 чет.</label>
+    </div>
     <div style="margin-left: 5px; margin-right: 5px; margin-top: 10px">
       <div style="position: relative;  width:100%;">
         <canvas id="chart"></canvas>
@@ -27,6 +40,8 @@
     </div>
 
     <h3 id="link">Более детальная статистика — в Telegram-боте<img src="images/link.png" style="width: 16px" /></h3>
+    <input type="hidden" id="per" value="year"/>
+    <input type="hidden" id="predm" value=""/>
   </body>
 </html>
 

@@ -114,6 +114,7 @@ td {
 body {
   text-align: center;
   margin: 0 auto;
+  user-select: none;
 }
 
 .bottom {
