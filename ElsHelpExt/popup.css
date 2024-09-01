@@ -64,7 +64,6 @@ h2 {
 .btn:hover {
   background-color:#055D7D;
   transition: 0.3s;
-  font-weight: bold;
 }
 
 .tab {
@@ -155,7 +154,7 @@ body {
 }
 
 #buttons button:hover{
-  background-color: #055D7D;
+  background-color: #07799e;
   border: 1px solid black;
 }
 
@@ -187,9 +186,13 @@ body {
 }
 
 #lines:hover{
-  border-bottom: 12px double black; /*#055D7D*/
-  border-top: 4px solid black;
-  transform: scale(1.1);
+  border-bottom: 12px double #055D7D; /*#055D7D*/
+  border-top: 4px solid #055D7D;
+  /*transform: scale(1.1);*/
+}
+
+#lines:active{
+  transform: scale(1.15);
 }
 
 #menu {

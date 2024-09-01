@@ -8,8 +8,30 @@ document.getElementById("lines").addEventListener("click", menu);
 document.getElementById("stat").addEventListener("click", stat);
 document.getElementById("settings").addEventListener("click", settings);
 document.getElementById("vozm").addEventListener("click", vozm);
+document.getElementById("rate").addEventListener("click", rate);
+document.getElementById("help").addEventListener("click", help);
 
 document.getElementById("clear").addEventListener("click", clear);
+
+function help(){
+  window.open("https://t.me/slbear");
+}
+
+document.addEventListener(
+  'click',
+  function handleClickOutsideBox(event) {
+    const m = document.getElementById('menu');
+    const l = document.getElementById('lines')
+    if (!m.contains(event.target) && !l.contains(event.target)) {
+      m.style.display = 'none';
+      document.querySelector('#is_menu_closed').checked = true;
+			divs = document.getElementsByTagName('div');
+			for (const d of divs){
+				if(d.id != 'lines' && d.id != 'buttons' && d.id != 'menu') d.style.opacity = '1';
+			}
+    }
+  },
+);
 
 function clear(){
 	var result = confirm('Хотите продолжить?\nВся история оценок будет удалена');
@@ -21,6 +43,10 @@ function clear(){
 
 function open_tg(){
   window.open("https://t.me/slbden");
+}
+
+function rate(){
+  window.open("https://chromewebstore.google.com/detail/elshelp/bmdnfegelmgebfegdomphfckbplkgneg");
 }
 
 function open_github(){
@@ -35,9 +61,17 @@ function menu(){
 	if (document.querySelector('#is_menu_closed').checked){
 		document.querySelector('#menu').style.display = 'inline';
 		document.querySelector('#is_menu_closed').checked = false;
+		divs = document.getElementsByTagName('div');
+		for (const d of divs){
+			if(d.id != 'lines' && d.id != 'buttons' && d.id != 'menu') d.style.opacity = '0.5';
+		}
 	} else{
 		document.querySelector('#menu').style.display = 'none';
 		document.querySelector('#is_menu_closed').checked = true;
+		divs = document.getElementsByTagName('div');
+		for (const d of divs){
+			if(d.id != 'lines' && d.id != 'buttons' && d.id != 'menu') d.style.opacity = '1';
+		}
 	}
 }
 

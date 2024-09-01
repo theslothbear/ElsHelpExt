@@ -71,6 +71,7 @@ label{
   background-color: #0b86b2;
   border: 1px solid black;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #plus:hover,#minus:hover{

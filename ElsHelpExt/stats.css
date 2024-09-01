@@ -58,7 +58,7 @@ select {
 
 #link:hover {
   text-decoration:underline;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 input[type=radio] {
