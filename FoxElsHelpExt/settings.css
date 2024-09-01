@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  animation: dropdown 1s ease-in-out;
+  text-align: center;
+  border-left: 2px solid #055D7D;
+  border-right: 2px solid #055D7D;
+  user-select: none;
+}
+
+div {
+  text-align: center;
+}
+
+/* WebKit and Blink */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+#save{
+  color: #fff;
+  background-color: #0b86b2;
+  border-color: black;
+  cursor: pointer;
+  width: 221px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#save:hover {
+  background-color:#055D7D;
+  transition: 0.3s;
+}
+
+label{
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#plus,#minus{
+  font-size: 16px;
+  padding: 5px;
+  width: 32px;
+  background-color: #0b86b2;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#plus:hover,#minus:hover{
+  background-color:#055D7D;
+  transition: 0.3s; 
+}
+
+#pars{
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 30px;
+}
+
+img {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+}

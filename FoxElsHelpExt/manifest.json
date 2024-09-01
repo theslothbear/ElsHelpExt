@@ -1,0 +1,39 @@
+{
+  "name": "ElsHelp",
+  "description": "Extension for ElSchool diary",
+  "version": "1.5",
+  "manifest_version": 3,
+  "host_permissions": ["*://elschool.ru/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+        
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "declarativeNetRequest",
+    "alarms",
+    "tabs"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "elshelpext@mail.ru",
+      "strict_min_version": "100.0"
+    }
+  }
+}
