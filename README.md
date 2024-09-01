@@ -69,8 +69,8 @@
 ![image](https://github.com/user-attachments/assets/964b1faa-997d-4ef9-b2ec-337ae196c982)
 
 
-### Весь проект создан [@slbear](https://t.me/slbear). По всем вопросам и предложениям, связанным с работой расширения, можете писать на почту elshelpext@mail.ru или в [Telegram](https://t.me/slbear).
-### Попробуйте [Telegram-бота](https://t.me/elschool_help_bot) с аналогичным функционалом, а также заходите в мой [Telegram-канал](https://t.me/slbden).
+#### Весь проект создан [@slbear](https://t.me/slbear). По всем вопросам и предложениям, связанным с работой расширения, можете писать на почту elshelpext@mail.ru или в [Telegram](https://t.me/slbear).
+#### Попробуйте [Telegram-бота](https://t.me/elschool_help_bot) с аналогичным функционалом, а также заходите в мой [Telegram-канал](https://t.me/slbden).
 
 
 
