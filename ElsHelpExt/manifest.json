@@ -1,7 +1,7 @@
 {
   "name": "ElsHelp",
   "description": "Extension for ElSchool diary",
-  "version": "1.5",
+  "version": "1.6",
   "manifest_version": 3,
   "host_permissions": ["*://elschool.ru/*"],
   "action": {
