@@ -17,6 +17,13 @@ window.onload = function(){
 }
 
 function get_info(login, pass, is_first){
+	var all = document.getElementsByTagName("*");
+	for(const a of all){
+		if (a.className == 'dz_day'){
+			a.style.opacity = '0.3';
+		}
+	}
+	document.querySelector('#loader').style.display = 'block';
 	httpGet('https://elschool.ru/Logon/Logout');
 	var t = httpPost(login, pass, is_first);
 }
@@ -138,6 +145,13 @@ function func(text){
 	}
 	for(const el of document.getElementsByClassName("lesson")){
 		el.addEventListener("click", change_color);
+	}
+	document.querySelector('#loader').style.display = 'none';
+	var all = document.getElementsByTagName("*");
+	for(const a of all){
+		if (a.className == 'dz_day'){
+			a.style.opacity = '1';
+		}
 	}
 }
 

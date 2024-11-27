@@ -10,10 +10,16 @@ document.getElementById("settings").addEventListener("click", settings);
 //document.getElementById("vozm").addEventListener("click", vozm);
 //document.getElementById("plan").addEventListener("click", open_plan);
 document.getElementById("dz").addEventListener("click", open_dz);
-document.getElementById("rate").addEventListener("click", rate);
+//document.getElementById("rate").addEventListener("click", rate);
 document.getElementById("help").addEventListener("click", help);
+document.getElementById("tabel").addEventListener("click", tabel);
 
 document.getElementById("clear").addEventListener("click", clear);
+
+function tabel(){
+	chrome.windows.create({url : "tabel.html", width: 500, height: 700, type: "popup"});
+}
+
 
 function help(){
   window.open("https://t.me/slbear");

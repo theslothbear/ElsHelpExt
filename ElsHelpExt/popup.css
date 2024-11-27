@@ -218,6 +218,8 @@ body {
   animation: dropdown 0.5s ease-in-out;
   border-left: 10px solid #055D7D;
   /*transition: 0.3s;*/
+  /*border-radius: 10px;*/
+  border-right: 2px solid black;
 }
 
 #menu img {
