@@ -1,0 +1,251 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  animation: dropdown 1s ease-in-out;
+  border-left: 10px solid #055D7D;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.person {
+  border-radius: 50%;
+  width: 150px;
+  margin-left: 20px;
+}
+
+div{
+  text-align: center;
+  display: inline;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+#login{
+  border: 1px solid #e3e4e4;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 200px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+#pass{
+  border: 1px solid #e3e4e4;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 200px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.btn{
+  color: #fff;
+  background-color: #0b86b2;
+  border-color: black;
+  cursor: pointer;
+  width: 221px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color:#055D7D;
+  transition: 0.3s;
+}
+
+.tab {
+  border-collapse: collapse;
+  overflow-y: scroll;
+  height: 280px;
+  display: block;
+  border-spacing: 2px;
+  margin-left: 30px;
+}
+
+#tb{
+  text-align: center;
+  vertical-align: middle;
+  /*display: ruby-text;*/
+}
+
+thead {
+  text-align: center;
+  vertical-align: middle;
+  /*display: ruby-text;*/
+}
+
+.historymark {
+  width: 50px;
+  float: left;
+  margin-left: 33px;
+  border-radius: 10px;
+}
+
+td {
+  background-color: white;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  border-top: 2px solid black;
+  width: 115px;
+  font-size: 14px;
+}
+
+.th {
+  font-weight: bold;
+  border-top: none;
+  font-size: 14px;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.bottom {
+  background-color: #fafafa;
+  display: block;
+  border-top: 3px solid black;
+  margin-top: 10px;
+}
+
+.bottom img {
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+  cursor: pointer;
+}
+
+.bottom img:hover {
+  top: -5px;
+}
+
+#buttons button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #0687b1;
+  width: 180px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  text-align: left;
+  border: 1px solid #0687b1;
+}
+
+#buttons button:hover{
+  background-color: #07799e;
+  border: 1px solid black;
+}
+
+#buttons span{
+  display: block;
+  position: fixed;
+  bottom: 5px;
+  left: 60px;
+  font-weight: bold;
+}
+
+#lines {
+  border-bottom: 12px double black; /*#055D7D*/
+  border-top: 4px solid black;
+  content: "";
+  height: 4px;
+  width: 25px;
+  box-sizing: unset;
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+  top: 5px !important;
+  left: 15px !important;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  z-index:2000;
+  cursor: pointer;
+}
+
+#lines:hover{
+  border-bottom: 12px double #055D7D; /*#055D7D*/
+  border-top: 4px solid #055D7D;
+  /*transform: scale(1.1);*/
+}
+
+#lines:active{
+  transform: scale(1.15);
+}
+
+#menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100%; /*477px*/
+  background-color: #0687b1;
+  z-index:1500;
+  display: none;
+  /*transition: right ease 0.5s;*/
+  animation: dropdown 0.5s ease-in-out;
+  border-left: 10px solid #055D7D;
+  /*transition: 0.3s;*/
+  /*border-radius: 10px;*/
+  border-right: 2px solid black;
+}
+
+#menu img {
+  width: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+#clear {
+  width: 14px;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: none;
+  transition: transform 0.3s ease;
+}
+
+#clear:hover {
+  transform: scale(1.2);
+}

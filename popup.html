@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ElsHelp</title>
+		<link rel="stylesheet" type="text/css" href="popup.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<div id="lines"></div>
+		<div id="menu">
+			<div style='display: block; border-top: 1px dotted black' id="buttons">
+			<h2 style="border-bottom: 1px solid black; padding: 10px">Меню</h2>
+			<button class="btn" id="tabel"><img src="images/tabel.png"/>Табель оценок</button>
+			<button class="btn" id="dz" style=""><img src="images/book.png"/>Домашние задания</button>
+			<button class="btn" id="stat"><img src="images/stat.png"/>Статистика</button>
+			<button class="btn" id="settings"><img src="images/settings.png"/>Настройки</button>
+			<!--<button class="btn" id="vozm" style=""><img src="images/world.png"/>Возможности</button>-->
+			<!--<button class="btn" id="rate" style=""><img src="images/star.png"/>Оцените нас</button>-->
+			<button class="btn" id="help" style=""><img src="images/help.png"/>Тех.поддержка</button>
+			<span id="v"></span>
+			</div>
+			<!-- <img src="images/icon128.png" style='width: 128px; opacity: 0.2'/>-->
+		</div>
+		<div>
+			<img src='images/person.png' class="person"/>
+		</div>
+		<div style="float: right; margin-top: 10px; margin-right: 20px;">
+			<input type="text" placeholder="Логин" value="" name="login" id="login" required/><br>
+			<input type="password" placeholder="Пароль" value="" name="pass" id="pass" required/><br>
+			<button id="gobtn" class="btn">Изменить</button>
+		</div>
+
+		<!--<div style='display: block; border-top: 1px dotted black' id="buttons">
+			<button class="btn" id="vozm">Возможности</button>
+			<button class="btn" id="stat">Статистика</button>
+			<button class="btn" id="settings">Настройки</button>
+		</div>-->
+		<input type="checkbox" id="is_menu_closed" checked hidden/>
+		<div style='display: block; border-top: 1px dotted black'>
+			<h2>История оценок<img src="images/clear.png" id="clear" title="Очистить историю"/></h2>
+			<table class='tab'>
+				<thead>
+					<td class="th">Оценка</td><td class="th">Предмет</td><td class="th">Дата получения</td>
+				</thead>
+				<tbody class="tb" id="tb">
+				</tbody>
+			</table>
+		</div>
+		<div class="bottom">
+			<img src="images/tg.png" id="tg" title="TG канал"/>
+			<img src="images/github.png" id="github" title="Исходный код"/>
+			<img src="images/bot.png" id="bot" title="TG-бот с аналогичным функционалом"/>
+		</div>
+	</body>
+</html>
+<script src="scripts/save_data.js"></script>
