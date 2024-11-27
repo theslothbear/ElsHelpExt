@@ -39,6 +39,12 @@ div {
   }
 }
 
+label{
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 h2 {
   display: inline-block;
   vertical-align: middle;
@@ -52,51 +58,33 @@ img {
   width: 24px;
 }
 
-select {
+#addtask {
+  border: 1px dashed;
+  background: lightgrey;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 80%;
   padding: 5px;
-  text-align: center;
-  border: 2px solid #055D7D;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 10px;
-  width: 99%;
+  transition: 0.3s;
 }
 
-#link{
+#addtask:hover {
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
-#link:hover {
-  text-decoration:underline;
-  transform: scale(1.08);
-}
-
-input[type=radio] {
-  display: none;
-}
-
-label {
+.t{
+  font-size: 14px;
+  width: 84%;
   display: inline-block;
-  cursor: pointer;
-  padding: 0px 15px;
-  line-height: 34px;
-  border: 1px solid #055D7D;
-  border-radius: 6px;
-  margin: 0 auto;
-  user-select: none;
-}
-
-#lyear {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-input[type=radio]:checked + label {
-  background: #0687b1ad;
-}
-
-.divperiod {
-  margin-top: 10px;
   padding: 5px;
+  background-color: whitesmoke;
+  border: 1px black solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
 }

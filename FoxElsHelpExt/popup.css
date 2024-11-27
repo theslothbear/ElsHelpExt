@@ -3,12 +3,22 @@ html {
 }
 
 body {
+  font-family: sans-serif;
   background-color: #fafafa;
   width: 450px;
   margin: 0 auto;
   padding: 0;
   animation: dropdown 1s ease-in-out;
   border-left: 10px solid #055D7D;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .person {
@@ -162,7 +172,7 @@ body {
   display: block;
   position: fixed;
   bottom: 5px;
-  left: 75px;
+  left: 60px;
   font-weight: bold;
 }
 
@@ -207,6 +217,9 @@ body {
   /*transition: right ease 0.5s;*/
   animation: dropdown 0.5s ease-in-out;
   border-left: 10px solid #055D7D;
+  /*transition: 0.3s;*/
+  /*border-radius: 10px;*/
+  border-right: 2px solid black;
 }
 
 #menu img {

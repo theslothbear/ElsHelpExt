@@ -15,6 +15,17 @@ window.onload = function() {
             document.querySelector('#l2').innerHTML = '2 трим.';
             document.querySelector('#l3').innerHTML = '3 трим.';
         }
+        chrome.storage.local.get(['stat'], function(data){
+            var stat = '';
+            if(typeof data.stat != 'undefined') stat = data.stat;
+            console.log(data.stat);
+            if(stat){
+                document.querySelector('#predmets').value = stat;
+                document.querySelector('#predm').value = stat;
+                graf();
+                chrome.storage.local.set({'stat': ''});
+            }
+        });
 	});
 
 

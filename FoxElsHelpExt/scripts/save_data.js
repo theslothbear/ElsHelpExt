@@ -7,11 +7,19 @@ document.getElementById("bot").addEventListener("click", open_bot);
 document.getElementById("lines").addEventListener("click", menu);
 document.getElementById("stat").addEventListener("click", stat);
 document.getElementById("settings").addEventListener("click", settings);
-document.getElementById("vozm").addEventListener("click", vozm);
-document.getElementById("rate").addEventListener("click", rate);
+//document.getElementById("vozm").addEventListener("click", vozm);
+//document.getElementById("plan").addEventListener("click", open_plan);
+document.getElementById("dz").addEventListener("click", open_dz);
+//document.getElementById("rate").addEventListener("click", rate);
 document.getElementById("help").addEventListener("click", help);
+document.getElementById("tabel").addEventListener("click", tabel);
 
 document.getElementById("clear").addEventListener("click", clear);
+
+function tabel(){
+	chrome.windows.create({url : "tabel.html", width: 500, height: 700, type: "popup"});
+}
+
 
 function help(){
   window.open("https://t.me/slbear");
@@ -77,6 +85,15 @@ function menu(){
 
 function stat(){
 	chrome.windows.create({url : "stats.html", width: 500, height: 700, type: "popup"});
+}
+
+function open_plan(){
+	chrome.windows.create({url : "plan.html", width: 500, height: 700, type: "popup"});
+	//alert('Скоро...');
+}
+
+function open_dz(){
+	chrome.windows.create({url : "dz.html", width: 500, height: 700, type: "popup"});
 }
 
 function settings(){
@@ -245,6 +262,6 @@ window.onload = function(){
 
 	var manifest = chrome.runtime.getManifest();
 	//console.log(manifest);
-	document.querySelector("#v").textContent = `v. ${manifest['version']} Beta`;
+	document.querySelector("#v").innerHTML = `ElsHelp Ext v.${manifest['version']}`;
 
 };
